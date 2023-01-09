@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipps und Tricks</title>
+
+    <!-- Manifest and Styles
+	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="KJÖ & KSV LLL-Wochenende"/>
+    <!-- On iOS, you can specify a web application title for the launch icon -->
+    <meta name="apple-mobile-web-app-title" content="KJÖ & KSV LLL-Wochenende"/>
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!-- Hiding Safari User Interface Components in standalone mode-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="index.html"/>
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/luxemburg_icon_iphone.png">
+
+</head>
+<body class="fullscreen">
+<div class="container">
+    <h1 class="title">Tipps und Tricks</h1>
+    <input class="button return-button" type=button onclick="parent.location='/index.html'" value='Zurück'>
+
+    <div class="vertical-container">
+        <div class="container-item" id="train">
+            <div id="transport-schedule">
+                <button type="button" class="collapsible">Fahrpläne und App</button>
+                <div class="content container-item">
+                    <p>
+                        Es empfiehlt sich für die Smartphone-NutzerInnen die App „BVG FahrInfo Plus“ herunterzuladen!
+                        <button type="button"
+                                onclick="parent.location='https://play.google.com/store/apps/details?id=de.eos.uptrade.android.fahrinfo.berlin&hl=de'">
+                            Android
+                        </button>
+                        <button type="button"
+                                onclick="parent.location='https://apps.apple.com/de/app/fahrinfo-berlin/id284971745'">
+                            Apple
+                        </button>
+                    </p>
+                    <p>
+                        Damit lassen sich schnell Fahrpläne nachschauen indem man Start und
+                        Ziel einfach eingibt (auch Adresseingabe möglich!).
+                        Sonst kann man auch unter fahrinfo.bvg.de Fahrpläne nachschauen.
+                    </p>
+                </div>
+            </div>
+
+            <div id="transport-ticket">
+                <button type="button" class="collapsible">Fahrkarten und App</button>
+                <div class="content container-item">
+                    <p>
+                        Tickets kann man entweder bei Fahrkartenautomaten oder in der App kaufen.
+                        Die App für Fahrkarten kann man hier herunterladen.
+                        <button type="button"
+                                onclick="parent.location='https://play.google.com/store/apps/details?id=de.bvg.ticket'">
+                            Android
+                        </button>
+                        <button type="button"
+                                onclick="parent.location='https://apps.apple.com/app/apple-store/id1232772818?amp%3Bct=Go-Live&amp%3Bmt=8&pt=118040828'">
+                            Apple
+                        </button>
+                    </p>
+                    <p>
+                        Folgende Fahrkarten sind besonders relevant:
+                    <table>
+                        <tr>
+                            <td>
+                                Kurzstrecke:
+                            </td>
+                            <td>
+                                2,00 €
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4-Fahrten-Kurzstrecke:
+                            </td>
+                            <td>
+                                6,00 €
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Einzelfahrschein:
+                            </td>
+                            <td>
+                                3,00 €
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                4-Fahrten-Karte:
+                            </td>
+                            <td>
+                                9,40 €
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                24-Stunden-Karte:
+                            </td>
+                            <td>
+                                8,80 €
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                24-Stunden-Karte Kleingruppe:<br/>
+                                (für 5 Personen)<br/>
+                            </td>
+                            <td>
+                                25,50 €
+                            </td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </div>
+
+
+            <div id="transport-infos">
+                <button type="button" class="collapsible">Weitere wichtige Öffi Infos</button>
+                <div class="content container-item">
+                    <p>
+                        Am meisten zahlt sich die Kleingruppen Tageskarte aus. Besonders dann, wenn ihr vorhabt, am
+                        Freitag noch mehr zu unternehmen, ist das wohl sehr empfehlenswert. Sprecht euch bitte am, damit
+                        ihr Gruppen mit ähnlichen Interessen bildet.
+                    </p>
+                    <p>
+                        Solltet ihr am Samstag nur zur Konferenz und zur SDAJ-Party wollen, reichen für Samstag 3
+                        Einzelfahrscheine. Jedoch kommt man zu fünft mit einem Gruppenticket billiger.
+                    </p>
+                    <p>
+                        Wollt ihr am Sonntag nur zur Demo und zum Gedenken, reicht da 1 Einzelfahrschein. Wir werden
+                        nämlich zu Fuß zur Demo gehen.
+                    </p>
+                    <p>
+                        Für Samstag und Sonntag solltet ihr euch auch absprechen was am empfehlenswertesten ist.
+                        Sprecht über eure Pläne mit denen die schon öfter dabei waren – sie werden euch dann Ratschläge
+                        geben können.
+                    </p>
+                </div>
+            </div>
+
+            <div id="phone">
+                <button type="button" class="collapsible">Handy im Ausland</button>
+                <div class="content container-item">
+                    <p>
+                        WICHTIG: Bitte beachtet, dass ihr im Ausland beim Anrufen von Österreichischen Nummer immer die
+                        0043-Vorwahl angeben müsst. Dies kann insbesondere zu Problemen führen wenn eine Nummer ohne
+                        +43 im Telefonbuch eingespeichert ist.
+                    </p>
+                    <p>
+                        Bitte beachtet, dass das Anrufen von <b>ausländischen Nummern</b> trotzdem etwas kostet
+                        (abhängig von eurem Vertrag). Lediglich das Anrufen von österreichischen Nummern sowie das
+                        Abheben (in jedem Fall) ist seit dem Fall der Roaming gebühren kostenlos.
+                    </p>
+                    <p>
+                        Viele besitzen wahrscheinlich aktiviertes Roaming-Internet. Damit können sie im Ausland
+                        kostenlos via Handy im Internet surfen. Da es aber unterschiedliche Tarife und Optionen gibt,
+                        kann es sein, dass euer kostenloses Roaming trotzdem ausgeschalten ist.
+                    </p>
+                    <p>
+                        Da keine pauschale Aussage möglich ist, geht bitte entsprechend eures Vertrags vor damit euch
+                        keine Mehrkosten entstehen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/use_webworker.js"></script>
+<script src="/js/use_serviceworker.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktdaten und Hardfacts</title>
+
+    <!-- Manifest and Styles
+	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="KJÖ & KSV LLL-Wochenende"/>
+    <!-- On iOS, you can specify a web application title for the launch icon -->
+    <meta name="apple-mobile-web-app-title" content="KJÖ & KSV LLL-Wochenende"/>
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!-- Hiding Safari User Interface Components in standalone mode-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="index.html"/>
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/luxemburg_icon_iphone.png">
+
+</head>
+<body class="fullscreen">
+<div class="container">
+    <h1 class="title">Kontaktdaten und Hardfacts</h1>
+    <input class="button return-button" type=button onclick="parent.location='/index.html'" value='Zurück'>
+
+<!--    TODO xx-->
+<!--    wichtige informationen hinzufügen-->
+<!--    u.a. stichpunktartiger ablauf mit uhrzeiten und beginn/endzeiten-->
+<!--    TODO-->
+<!--    Anreise für Kurz - wie macht man das mit dem Gepäck und Co-->
+
+    <div class="vertical-container">
+        <div class="container-item" id="hardfacts">
+            <div id="${id}">
+                <button type="button" class="collapsible">Kontaktdaten</button>
+                <div class="content container-item">
+                    <p>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Verantwortlichkeit</th>
+                            <th>Telefon</th>
+                        </tr>
+                        <tr>
+                            <td>Mario</td>
+                            <td>Organisation vor Ort<br/>Unterkunft<br/>Anreise <b>Donnerstag Graz</b></td>
+                            <td>+43 650 4022 577</td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </div>
+
+            <div id=${id}">
+                <button type="button" class="collapsible">Adressen</button>
+                <div class="content container-item">
+                    <p>
+                    <table>
+                        <tr>
+                            <th>Ort</th>
+                            <th>Bestimmung</th>
+                            <th>Adresse</th>
+                            <th>Nächste U-Bahn-Station</th>
+                            <th>Linien</th>
+                        </tr>
+                        <tr>
+                            <td>Hauptbahnhof</td>
+                            <td>Ankunft/Abfahrt vom Zug</td>
+                            <td>Europaplatz 1, Berlin-Moabit</td>
+                            <td>Hauptbahnhof</td>
+                            <td>U55, S3, S5, S7, S9</td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/use_webworker.js"></script>
+<script src="/js/use_serviceworker.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

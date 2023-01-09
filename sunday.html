@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Sonntag: LLL-Demo und Gedenken</title>
+
+    <!-- Manifest and Styles
+	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="KJÖ & KSV LLL-Wochenende"/>
+    <!-- On iOS, you can specify a web application title for the launch icon -->
+    <meta name="apple-mobile-web-app-title" content="KJÖ & KSV LLL-Wochenende"/>
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!-- Hiding Safari User Interface Components in standalone mode-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="index.html"/>
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/luxemburg_icon_iphone.png">
+
+</head>
+<body class="fullscreen">
+<div class="container">
+    <h1 class="title">Sonntag: LLL-Demo und Gedenken</h1>
+    <input class="button return-button" type=button onclick="parent.location='/index.html'" value='Zurück'>
+
+    <div class="vertical-container">
+        <div class="container-item" id="train">
+            <div id="demo">
+                <button type="button" class="collapsible">LLL-Demo</button>
+                <div class="content container-item">
+                    <p class="important">
+                        Beginn ist um xx Uhr bei der U-Bahn-Station Frankfurter Tor.
+                    </p>
+                    <p>
+                        Vom Hostel müssen wir um xx Uhr losgehen, damit wir bisschen vor dem Demostart dort sind und uns beim SDAJ-Block einreihen können.
+                    </p>
+                    <p>
+                        WICHTIG: Bei der Demonstration keine Drogen, keinen Alkohol, keine Gegenstände die sich irgendwie als Waffen interpretieren lassen könnten (Nagelschere, Knieschoner, etc.) mitnehmen!
+                    </p>
+                    <p>
+                        Haltet euch an die Anweisungen von der Demoleitung bzw. SDAJ. Im Zweifel haltet ihr euch an die Anweisungen von Leo, Jasmina und Mario.
+                    </p>
+                </div>
+            </div>
+
+            <div id="commemoration">
+                <button type="button" class="collapsible">LL-Gedenken</button>
+                <div class="content container-item">
+                    <p>
+                        Der Demozug geht bis zur Gedenkstätte der Sozialisten, wo im Anschluss daran das "Luxemburg-Liebknecht-Gedenken" stattfindet.
+                    </p>
+                    <p>
+                        Direkt davor kann man meistens noch Blumen (meist Nelken), Kränze und Kerzen kaufen wenn ihr das wünscht.
+                    </p>
+                    <p>
+                        Im Anschluss an das Gedenken geht es zurück zur U-Bahn-Station von wo aus man wieder in die Stadt fahren kann.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/use_webworker.js"></script>
+<script src="/js/use_serviceworker.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>

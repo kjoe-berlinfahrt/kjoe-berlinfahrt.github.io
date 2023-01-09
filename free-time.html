@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Freizeitempfehlungen und Freitagsprogramm</title>
+
+    <!-- Manifest and Styles
+	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="KJÖ & KSV LLL-Wochenende"/>
+    <!-- On iOS, you can specify a web application title for the launch icon -->
+    <meta name="apple-mobile-web-app-title" content="KJÖ & KSV LLL-Wochenende"/>
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!-- Hiding Safari User Interface Components in standalone mode-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="index.html"/>
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/luxemburg_icon_iphone.png">
+
+</head>
+<body class="fullscreen">
+<div class="container">
+    <h1 class="title">Freizeitempfehlungen und Freitagsprogramm</h1>
+    <input class="button return-button" type=button onclick="parent.location='../index.html'" value='Zurück'>
+
+    <div class="vertical-container">
+        <div class="container-item">
+            <p class="important">
+                Sprecht euch ab was ihr machen wollt und bildet Gruppen. So kann man sich unterstützen und reist
+                billiger. Abgesehen davon: Gemeinsam macht alles mehr Spaß!
+            </p>
+        </div>
+
+        <div class="container-item" id="train">
+            <div id="friday">
+                <button type="button" class="collapsible">Freitagsprogramm</button>
+                <div class="content container-item">
+                    <p>
+                        Das Programm am Freitag ist freiwillig!
+                    </p>
+                    <p>
+                    <table>
+                        <tr>
+                            <td>
+                                x Uhr
+                            </td>
+                            <td>
+                                Ankunft Berlin Hauptbahnhof
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ca. xx Uhr
+                            </td>
+                            <td>
+                                Ankunft Hostel (KEIN Check-In)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Freizeit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xx Uhr
+                            </td>
+                            <td>
+                                xx Ort
+                            </td>
+                            <td>
+                                Historische Stadtrundführung (allgemeine Stadtrundführung durch Berlin + Schwerpunkt
+                                1917/18) – Bis ca. 15:00 Uhr (Fahrtzeit vom Hostel zum Potsdamer Platz: ca. 30 Minuten)
+                                xx Infos korrigieren
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xx Uhr
+                            </td>
+                            <td>
+                                Check-In Hostel
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                xx Uhr
+                            </td>
+                            <td>
+                                Besichtigung Treptower Park
+                            </td>
+                            <td>
+                                Riesiges Sowjet Denkmal und Gedenkstätte
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Freizeit
+                            </td>
+                        </tr>
+                    </table>
+                    </p>
+                </div>
+            </div>
+
+            <div id="museum">
+                <button type="button" class="collapsible">Museum- und Ausstellungsbesuche</button>
+                <div class="content container-item">
+                    <h3>Gedenkstätte Deutscher Widerstand</h3>
+                    <ul>
+                        <li>
+                            Ausstellungen:
+                        </li>
+                        <ul>
+                            <li>
+                                Widerstand gegen den Nationalsozialismus
+                            </li>
+                            <li>
+
+                            </li>
+                        </ul>
+                        <li>
+                            Stauffenbergstraße 13 – 14 Eingang über den Ehrenhof D-10785 Berlin-Mitte
+                        </li>
+                        <li>
+                            Freitag: 9:00 – 18:00 Uhr
+                            Samstag, Sonntag: 10:00 – 18:00 Uhr
+                        </li>
+                        <li>
+                            Einritt Frei
+                        </li>
+                        <li>
+                            <a href="https://www.gdw-berlin.de/home/">Webseite</a>
+                        </li>
+                    </ul>
+                    <h3>Deutsches historisches Museum</h3>
+                    <ul>
+                        <li>
+                            2000 Jahre Deutsche Geschichte mit 8000 Exponaten und auf 8000 Quadratmetern
+                        </li>
+                        <li>
+                            Unter den Linden 2 10117 Berlin
+                        </li>
+                        <li>
+                            Freitag bis Sonntag: 10:00 bis 18:00 Uhr
+                        </li>
+                        <li>
+                            8,00 €
+                        </li>
+                        <li>
+                            <a href="https://www.dhm.de">Webseite</a>
+                        </li>
+                    </ul>
+                    <h3>DDR Museum</h3>
+                    <ul>
+                        <li>
+                            ACHTUNG: Aus Erfahrungen der letzten Jahre.
+                            Manches ist gut und interessant, manches ist antikommunistisch.
+                            Gemischte Rückmeldungen und Meinungen.
+                            Fragt am besten in der Gruppe nach Details und Erfahrungen.
+                        </li>
+                        <li>
+                            Karl-Liebknecht-Straße 1, 10178 Berlin
+                        </li>
+                        <li>
+                            Freitag/Sonntag: 10:00 – 20:00 Uhr
+                            Samstag: 10:00 – 22:00 Uhr
+                        </li>
+                        <li>
+                            8,50 €
+                        </li>
+                        <li>
+                            <a href="https://www.ddr-museum.de/de">Webseite</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="shops">
+                <button type="button" class="collapsible">Geschäfte und Antiquariate</button>
+                <div class="content container-item">
+                    <h3>M99 (Kreuzberg)</h3>
+                    <ul>
+                        <li>
+                            Gemischtwarenladen mit Revolutionsbedarf
+                        </li>
+                        <li>
+                            Geschichtsträchtiger Laden mit allem Möglichem, von Büchern über T-Shirts bis diversem
+                            „Revolutionsbedarf“
+                        </li>
+                        <li>
+                            Tatsächliche Öffnungszeiten können spontan variieren ;-)
+                        </li>
+                        <li>
+                            Angeblich: Mo-So: 12:00 bis 22:00 Uhr
+                            ODER: Mo-So: 15:00 bis 19:00 Uhr
+                            ODER: Einfach dann wenn der Typ da ist :-D
+                        </li>
+                        <li>
+                            Manteuffelstraße 99, 10997 Berlin
+                        </li>
+                    </ul>
+
+                    <h3>Rotes Antiquariat (Mitte)</h3>
+                    <ul>
+                        <li>
+                            Das Geschäft in Mitte spezialisiert sich auf Literatur zur sozialistischen Theorie und zur
+                            Geschichte der Arbeiterbewegung, du findest hier aber auch philosophische, soziologische und
+                            historische Bücher.
+                        </li>
+                        <li>
+                            Montag bis Freitag 12-18 Uhr
+                            Samstag 11-15 Uhr
+                        </li>
+                        <li>
+                            Rungestr. 20 10179 Berlin
+                        </li>
+                        <li>
+                            <a href="https://www.rotes-antiquariat.de">Webseite</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="sights">
+                <button type="button" class="collapsible">Sonstige Sehenswürdigkeiten</button>
+                <div class="content container-item">
+                    <h3>Sowjetisches Ehrenmal Treptower Park</h3>
+                    <ul>
+                        <li>
+                            Wahrlich IMPOSTANT!
+                        </li>
+                        <li>
+                            Puschkinallee, 12435 Berlin
+                        </li>
+                    </ul>
+
+                    <h3>Sowjetisches Ehrenmal Tiergarten</h3>
+                    <ul>
+                        <li>
+                            Nähe Brandenburger Tor
+                        </li>
+                        <li>
+                            Str. des 17. Juni 4, 10557 Berlin
+                        </li>
+                    </ul>
+
+                    <h3>Thälmann Denkmal</h3>
+                    <ul>
+                        <li>
+                            Teil des Ernst-Thälmann-Parks
+                        </li>
+                        <li>
+                            Greifswalder Str. 52
+                        </li>
+                    </ul>
+
+                    <h3>Denkmal für die ermordeten Juden Europas</h3>
+                    <ul>
+                        <li>
+                            Wird häufig übersehen oder missverstanden. Wenn man weiß was es darstellen soll, fasst es
+                            die Stimmung gut ein, wenn man hineingeht.
+                        </li>
+                        <li>
+                            Cora-Berliner-Straße 1, 10117 Berlin
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/use_webworker.js"></script>
+<script src="/js/use_serviceworker.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>
