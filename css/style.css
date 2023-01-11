@@ -155,23 +155,23 @@ li {
 }
 
 table {
-  max-width: 1080px;
-  table-layout: auto;
-  border: 1px solid gray;
-  overflow-x:scroll;
-  flex: 1;
-  flex-basis: 100%;
-  border-collapse: separate;
+  max-width: 1080px !important;
+  table-layout: auto !important;
+  border: 1px solid gray !important;
+  overflow-x:scroll !important;
+  flex: 1 !important;
+  flex-basis: 100% !important;
+  border-collapse: separate !important;
 }
 
 .table {
-  max-width: 1080px;
-  table-layout: auto;
-  border: 1px solid gray;
-  overflow-x:scroll;
-  flex: 1;
-  flex-basis: 100%;
-  border-collapse: separate;
+  max-width: 1080px !important;
+  table-layout: auto !important;
+  border: 1px solid gray !important;
+  overflow-x:scroll !important;
+  flex: 1 !important;
+  flex-basis: 100% !important;
+  border-collapse: separate !important;
 }
 
 th, td {
