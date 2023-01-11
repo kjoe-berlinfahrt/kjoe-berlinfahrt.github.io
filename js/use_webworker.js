@@ -1,11 +1,11 @@
 /********************
  * USE A WEB WORKER *
  ********************/
-const version = '0.1'
+const version = '0.11'
 
 function goTo(page) {
     let versionForURL = version.replace('.', '-');
-    parent.location.href = page + 'html?version=' + versionForURL;
+    parent.location.href = page + '.html?version=' + versionForURL;
 }
 
 new Worker("/js/webworker.js");
