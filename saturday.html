@@ -53,7 +53,9 @@
                     <p>
                         Unbedingt mitnehmen: Lichtbildausweis + ausreichend Geld für Stände und Essen
                     </p>
-                    <button class="button" onclick="window.location.href='https://www.jungewelt.de/rlk/'">Hier gehts zur Rosa-Luxemburg-Konferenz Webseite</button>
+                    <button class="button" onclick="window.location.href='https://www.jungewelt.de/rlk/'">Hier gehts zur
+                        Rosa-Luxemburg-Konferenz Webseite
+                    </button>
                     <h2>
                         Konferenz-Aufbau
                     </h2>
@@ -77,7 +79,8 @@
                                     Jugendpodium
                                 </li>
                                 <li>
-                                    Kleiner Saal mit Essen, Trinken, DKP-Stand, Cafe-K mit reichlich essen und Getränken etc.
+                                    Kleiner Saal mit Essen, Trinken, DKP-Stand, Cafe-K mit reichlich essen und Getränken
+                                    etc.
                                 </li>
                             </ul>
                             <li>
@@ -178,7 +181,7 @@
 </script>
 <!--Scripts for expandable buttons-->
 <script>
-    const coll = document.getElementsByClassName("collapsible-embedded");
+    const coll = document.getElementsByClassName("collapsible");
     let i;
 
     for (i = 0; i < coll.length; i++) {
@@ -187,7 +190,7 @@
                 this.classList.toggle("active");
                 this.nextElementSibling.style.maxHeight = null;
             } else {
-                for (const e of document.getElementsByClassName('collapsible-embedded')) {
+                for (const e of document.getElementsByClassName('collapsible')) {
                     if (e.classList.contains("active")) {
                         e.classList.toggle("active");
                         e.nextElementSibling.style.maxHeight = null;
@@ -200,7 +203,7 @@
     }
 </script>
 <script>
-    let coll = document.getElementsByClassName("collapsible-embedded");
+    let coll = document.getElementsByClassName("collapsible");
     let i;
 
     for (i = 0; i < coll.length; i++) {
