@@ -146,6 +146,21 @@ html, .fullscreen {
   text-align: left;
 }
 
+ul {
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
+
+table {
+  max-width: 1080px;
+  table-layout: auto;
+  border: 1px solid gray;
+  overflow-x: auto;
+}
+
 #confirmation {
   border: 5px solid green;
   color: green;
