@@ -329,7 +329,14 @@
 <script src="/js/use_webworker.js"></script>
 <script src="/js/use_serviceworker.js"></script>
 <script src="/js/main.js"></script>
-<script>zoomOutMobile()</script>
+<script>
+    var viewport = document.querySelector('meta[name="viewport"]');
+
+    if ( viewport ) {
+        viewport.content = "initial-scale=0.1";
+        viewport.content = "width=1200";
+    }
+</script>
 
 <!--Scripts for expandable buttons-->
 <script>
