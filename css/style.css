@@ -141,6 +141,11 @@ html, .fullscreen {
   color: red;
 }
 
+.list {
+  margin: auto;
+  text-align: center;
+}
+
 #confirmation {
   border: 5px solid green;
   color: green;

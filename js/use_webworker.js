@@ -1,7 +1,7 @@
 /********************
  * USE A WEB WORKER *
  ********************/
-const version = '0.11'
+const version = '0.12'
 
 function goTo(page) {
     let versionForURL = version.replace('.', '-');
