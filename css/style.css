@@ -159,6 +159,13 @@ table {
   table-layout: auto;
   border: 1px solid gray;
   overflow-x: auto;
+  flex: 1;
+  flex-basis: 100%;
+  border-collapse: separate;
+}
+
+th, td {
+  border: 1px solid grey;
 }
 
 #confirmation {
