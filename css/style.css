@@ -158,7 +158,17 @@ table {
   max-width: 1080px;
   table-layout: auto;
   border: 1px solid gray;
-  overflow-x: auto;
+  overflow-x:scroll;
+  flex: 1;
+  flex-basis: 100%;
+  border-collapse: separate;
+}
+
+.table {
+  max-width: 1080px;
+  table-layout: auto;
+  border: 1px solid gray;
+  overflow-x:scroll;
   flex: 1;
   flex-basis: 100%;
   border-collapse: separate;

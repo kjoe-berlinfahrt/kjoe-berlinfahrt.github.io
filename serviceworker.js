@@ -2,7 +2,7 @@
  * SERVICE WORKER *
  ******************/
 const appName = 'lll-wochenende'
-const version = '0.15'
+const version = '0.16'
 const cacheName = appName + '-cache-v' + version;
 const filesToCache = [
     'img/luxemburg_icon_iphone.png',
@@ -18,6 +18,7 @@ const filesToCache = [
     'sunday.html',
     'tips.html',
     'train.html',
+    'conference.html',
     'css/style.css',
     'js/use_webworker.js',
     'js/use_serviceworker.js',

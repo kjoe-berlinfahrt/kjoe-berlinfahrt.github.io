@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Konferenzprogramm</title>
+
+    <!-- Manifest and Styles
+	  The manifest file lists all the information about the website in a JSON format und usually resides in the root folder of a web app -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- App Name -->
+    <meta name="application-name" content="KJÖ & KSV LLL-Wochenende"/>
+    <!-- On iOS, you can specify a web application title for the launch icon -->
+    <meta name="apple-mobile-web-app-title" content="KJÖ & KSV LLL-Wochenende"/>
+
+    <!-- Capability -->
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <!-- Hiding Safari User Interface Components in standalone mode-->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+
+    <!-- Starting URL -->
+    <meta name="msapplication-starturl" content="index.html"/>
+
+    <!-- Theme/Display -->
+    <meta name="theme-color" content="#FBFBFB"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+    <!-- Icon for iOS 180x180 -->
+    <link rel="apple-touch-icon" href="img/luxemburg_icon_iphone.png">
+
+</head>
+<body class="fullscreen">
+<div class="container">
+    <h1 class="title">Konferenzprogramm</h1>
+    <input class="button return-button" type=button onclick="goTo('index')" value='Zurück'>
+
+    <div class="vertical-container">
+        <div class="container-item" id="program">
+            <p class="important">
+                PROGRAMM-UHRZEITEN: Das entgültige Programm wird in der Regel vor Ort mit der aktuellen Jungen
+                Welt verteilt bzw. liegt aus.
+                Zusätzlich hängen meisten noch viele Plakate mit div. Progammen an den Wänden.
+                Im Worst-Case muss man sich das Programm online runterladen. Es empfiehlt sich das Programm
+                genau anzuschauen
+                und sich zu überlegen wo man am liebsten hin möchte, da sich viele Veranstaltungen
+                überschneiden.
+            </p>
+
+            <h2>HAUPTBÜHNE</h2>
+            <div id="mp1">
+                <button type="button" class="collapsible-embedded">Anne Morelli, Historikerin (Belgien):
+                    Kriegspropaganda der NATO
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Anne Morelli (geb. 1948) ist Historikerin und Honorarprofessorin an der Universität
+                        Brüssel (ULB). An ihrem Seminar »Historische Kritik« nahmen jedes Jahr mehr als tausend
+                        Studenten teil. Für sie verfasste sie das kleine Buch »Principes élémentaires de
+                        propagande de guerre« (Elementare Prinzipien der Kriegspropaganda), das zahlreiche
+                        Auflagen in französischer Sprache erlebte. Heute gilt es als »Klassiker« und ist in
+                        sieben Sprachen erhältlich.
+                    </p>
+                    <p>
+                        Der breiten belgischen Öffentlichkeit wurde sie durch ihre Bücher über die Geschichte
+                        der Einwanderung nach Belgien (»Histoire des étrangers et de l’immigration en Belgique«)
+                        und der Auswanderung von Belgiern (»Les émigrants belges«), aber auch über die
+                        Mystifikationen der nationalen Geschichte (»Les grands mythes de l’histoire de
+                        Belgique«) bekannt. Kürzlich veröffentlichte sie in der größten belgischen Tageszeitung
+                        (Le Soir) einen Artikel, in dem sie die herrschende Russophobie verurteilte (»War Romain
+                        Rolland ein ›Putinist‹?« ).
+                    </p>
+                </div>
+            </div>
+            <div id="mp2">
+                <button type="button" class="collapsible-embedded">Wen Tiejun, Ökonom (VR China):
+                    Entwicklungsmodell China. Wovor hat der Westen Angst?
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Wen Tiejun (geb. 1951) ist ein chinesischer Ökonom und spezialisiert auf Fragen
+                        nachhaltiger landwirtschaftlicher Entwicklung. Er lehrt als Professor unter anderem an
+                        der Renmin-Universität in Beijing und ist in verschiedenen beratenden staatlichen
+                        Gremien tätig. Er ist Autor zahlreicher Publikationen zu Makroökonomie, Ökologie als
+                        auch zu Themen bezüglich der Verhältnisse im ländlichen Raum in China. In englischer
+                        Sprache ist unter anderem 2021 sein Buch »Ten Crises. The Political Economy of China’s
+                        Development (1949–2020)« (deutsch: Zehn Krisen. Die politische Ökonomie der Entwicklung
+                        Chinas [1949–2020]) erschienen.
+                    </p>
+                </div>
+            </div>
+            <div id="mp3">
+                <button type="button" class="collapsible-embedded">Aminata D. Traoré, Exministerin (Mali):
+                    Folgen der westlichen Kriegspolitik für arme Länder
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Aminata Dramane Traoré (geb. 1947) ist eine malische Autorin und
+                        Menschenrechtsaktivistin. Zwischen 1997 und 2000 war sie unter dem Präsidenten Alpha
+                        Oumar Konaré Ministerin für Kultur und Tourismus in Mali. Sie hat unter anderem am
+                        Institut für Ethnosoziologie an der Universität Abidjan gelehrt (1974–1988) , als
+                        Studiendirektorin im Frauenministerium der Elfenbeinküste gearbeitet (1979–1988) und war
+                        Koordinatorin des UN-Entwicklungsprogramms für Wasserversorgung in Afrika (1988–1992).
+                        2021 hat ihr die Stiftung Ethecon den »Internationalen Ethecon-Blue-Planet-Award« für
+                        ihren Einsatz für Migrationsfreiheit, Klimagerechtigkeit und gegen Militarismus
+                        verliehen.
+                    </p>
+                </div>
+            </div>
+            <div id="mp4">
+                <button type="button" class="collapsible-embedded">Nikolai Platoschkin, Exdiplomat, Buchautor
+                    und Politiker (Russische Föderation): Zur sozialen Lage in Russland
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Nikolai Platoschkin (geb. 1965) war von 1987 bis 2006 sowjetischer und russischer
+                        Diplomat. Er gründete 2019 die »Bewegung für einen neuen Sozialismus« Zwischen 1987 und
+                        2006 war er an den Vertretungen in der Bundesrepublik und in den USA tätig. Danach
+                        arbeitete er als Professor für Geschichte an der Moskauer Geisteswissenschaftlichen
+                        Universität. Nach der Ankündigung, bei den Präsidentschaftswahlen 2020 zu kandidieren,
+                        wurde er nach einer Hausdurchsuchung unter Hausarrest gestellt und im Mai 2021 zu fünf
+                        Jahren Haft auf Bewährung verurteilt. Er ist Mitarbeiter seiner Frau, der
+                        Dumaabgeordneten Angelika Glaskowa.
+                    </p>
+                </div>
+            </div>
+            <div id="mp5">
+                <button type="button" class="collapsible-embedded">Jack Rasmus, Ökonom (USA), Deglobalisierung
+                    und der Zwang zum Krieg
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Jack Rasmus unterrichtet US-amerikanische Wirtschaftspolitik, Wirtschaftsgeschichte der
+                        USA und Geschichte des ökonomischen Denkens am St. Mary’s College in Moraga,
+                        Kalifornien. Er ist Autor mehrerer Bücher zur Weltwirtschaft, zuletzt erschien von ihm
+                        2019 der Band »Alexander Hamilton and the Origins of the Fed«. Vor seiner Tätigkeit als
+                        Collegelehrer und Buchautor war Rasmus Ökonom und Analyst bei verschiedenen
+                        Marktforschungsunternehmen und davor wiederum aktiver Gewerkschafter in diversen
+                        Branchen. Er veröffentlicht regelmäßig Artikel etwa bei Telesur und Counterpunch und
+                        betreibt einen Blog auf jackrasmus.com.
+                    </p>
+                </div>
+            </div>
+            <div id="mp6">
+                <button type="button" class="collapsible-embedded">Aleida Guevara, Politikerin und Kinderärztin
+                    (Kuba, Grußbotschaft)
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Rosa Miriam Elizalde Zorrilla (geb. 1966) ist erste Vizepräsidentin des kubanischen
+                        Journalistenverbandes und des lateinamerikanischen Journalistenverbandes (Felap). Sie
+                        studierte am Raúl-Cepero-Bonilla-Institut in Havanna Journalistik, 2014 folgte dort ihre
+                        Promotion in Kommunikationswissenschaften. Von 1989 bis 2002 war sie bei Juventud
+                        Rebelde, der Tageszeitung des kommunistischen Jugendverbands Kubas, tätig, u. a. als
+                        Leiterin des Teams für Jugendfragen (1991), Chefredakteurin (1992–1993),
+                        stellvertretende Redaktionsleiterin und Verantwortliche für das Nachrichtenmanagement
+                        der Zeitung (1994–2002). Sie nahm an zahlreichen internationalen Veranstaltungen und
+                        Foren in Kuba und im Ausland als Expertin für digitale politische Kommunikation teil.
+                    </p>
+                </div>
+            </div>
+            <div id="mp7">
+                <button type="button" class="collapsible-embedded">Rosa Miriam Elizalde, Journalistin (Havanna,
+                    Kuba), erste Vizepräsidentin des kubanischen Journalistenverbandes, Sozialismus als
+                    Voraussetzung für Frieden: Das Beispiel Kuba
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Keine Detaillinfos vorhanden.
+                    </p>
+                </div>
+            </div>
+            <div id="mp8">
+                <button type="button" class="collapsible-embedded">Mumia Abu-Jamal, politischer Gefangener (USA,
+                    Grußbotschaft), präsentiert von Noelle Hanrahan (Prison Radio)
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        <a href="https://www.komintern.at/40-jahre-hinter-gittern-freiheit-fuer-mumia-abu-jamal/">Über
+                            Mumia Abu-Jamal siehe hier.</a>
+                    </p>
+                    <p>
+                        Noelle Hanrahan ist lesbisch, Journalistin, Privatermittlerin und praktizierende
+                        Rechtsanwältin.
+                        Sie befreite das erste Buch von Mumia Abu-Jamal namens »Live from Death Row« also »Leben
+                        aus dem Todestrakt« aus dem Gefängnis. Seit 30 Jahren produziert sie seine Radio Essays
+                        und ist zusammen mit Jennifer Beach Mitbegründerin von »Prison Radio«. Zudem ist sie die
+                        Produzentin der Dokumentation »Mumia: Long Distance Revolutionary« also »Mumia:
+                        Revolutionär über lange Distanzen«. 2020 veröffentlichte »Prison Radio« seine Trilogie
+                        und Hauptwerk »Murder Incorporated (Empire, Genocide & Manifest Destiny)«, zu deutsch
+                        »Mörder GmbH - Imperium, Genozid und Manifestiertes Schicksal« (Co Autor Stephen
+                        Vittoria). Sie war die Hauptorganisatorin des erfolgreichen zivilrechtlichen Prozesses
+                        »Bari vs. USA«, welcher kriminelle Machenschaften bis hin zum geplanten Mord an Judi
+                        Bari, durch das FBI, ATF und das Oakland Police Department aufdeckte. Bari war der
+                        Organisator von »Earth First!« und brachte Arbeiter und Umweltschützer zusammen, um
+                        Kaliforniens Wälder zu retten (www.redwoodjusticefund.org).
+                        Hanrahan ist Spezialistin für Forschung und Interviews in zivil- und strafrechtlichen
+                        Verteidigungsfällen und ist eine lizensierte Privatermittlerin in Pennsylvania.
+                        Sie hat einen Bachelor of Arts in der Stanford Universität absolviert und einen Master
+                        Abschluss in Strafverteidigung in Boston sowie einen Jura Doktortitel von der
+                        Juristische Fakultät Rutgers.
+                    </p>
+                </div>
+            </div>
+
+            <h2>PODIUMSDISKUSSION - HAUPTBÜHNE</h2>
+            <div id="main-discussion">
+                <button type="button" class="collapsible">Podiumsdiskussion - 18:30 Uhr</button>
+                <div class="content container-item">
+                    <h2>
+                        »Kämpfen in der Krise«
+                        Der Krieg und die soziale Frage
+                    </h2>
+                    <p>
+                        Brot, Miete, Heizung, Strom ... Enorme Preissteigerungen machen der Mehrheit der Bevöl- kerung
+                        zu schaffen, viele Menschen müssen einen Großteil ihres Lohns inzwischen für die Lebenshaltung
+                        aufwenden. Der von der Bundesregierung gegen Moskau entfesselte Wirt- schaftskrieg fordert
+                        seinen Preis.
+                    </p>
+                    <p>
+                        Auf dem Podium soll Bilanz der vergangenen Monate gezogen und der Frage nachgegangen werden,
+                        inwiefern es gelungen ist, rechte Kräfte zurückzudrängen, die von Anbeginn versucht haben,
+                        die Protestbewegung zu dominieren. Im Mittelpunkt der Diskussion steht aber die größte
+                        Herausforderung: fortschrittliche Kräfte für den Kampf gegen die Abwälzung der Kriegs- und
+                        Krisenkosten auf die arbeitende Bevölkerung zu bündeln und wieder in die Offensive zu kommen.
+                    </p>
+                    <p>
+                        Christin Bernhold, Basisaktivistin (Hamburg);
+                        Thilo Nicklas, Gewerkschafter, Industriegewerkschaft Bauen-Agrar-Umwelt (IG BAU), stellv.
+                        Vorsitzender des Bezirksverbands Köln-Bonn;
+                        Sevim Dagdelen, Bundestagsabgeordnete Die Linke;
+                        Melina Deymann, Redaktion Wochenzeitung Unsere Zeit
+                    </p>
+                    <h3>Personen</h3>
+                    <h4>
+                        Christin Bernhold
+                    </h4>
+                    <p>
+                        Christin Bernhold macht seit 15 Jahren vorrangig antimilitaristische Arbeit und ist seither
+                        entsprechend in der Friedensbewegung in Hamburg aktiv. 2010 war sie Mitgründerin des Hamburger
+                        Bündnisses »Bildung ohne Bundeswehr« (BoB). Seit einigen Jahren ist sie Mitglied im »Bündnis
+                        Marxismus und Tierbefreiung«. 2014 (nach dem Europaparteitag in Hamburg) trat sie aus der Partei
+                        Die Linke aus. Nach ihrem Studium der Wirtschaftsgeographie promovierte sie; ihre Dissertation
+                        trägt den Titel: »Globale Wertschöpfungsketten und ungleiche Entwicklung. Unternehmensstrategien
+                        und Klassendynamik im argentinischen Agrobusiness«.
+                    </p>
+                    <h4>
+                        Thilo Nicklas
+                    </h4>
+                    <p>
+                        Thilo Nicklas wuchs in Wriezen an der Oder und Leipzig auf. Der gelernte Baumaschinist ist seit
+                        2002 Betriebsratsvorsitzender und Mitglied der Industriegewerkschaft Bauen–Agrar–Umwelt (IG
+                        BAU). Seit 2017 ist er stellvertretender Vorsitzender des IG-BAU-Bezirksverbandes Köln–Bonn,
+                        zudem ehrenamtlicher Richter am Arbeitsgericht Köln.
+                    </p>
+                    <h4>
+                        Sevim Dagdelen
+                    </h4>
+                    <p>
+                        Sevim Dagdelen, geboren und aufgewachsen in Duisburg, studierte Rechtswissenschaften in Marburg,
+                        Adelaide und Köln. Seit 2005 ist sie Mitglied des Deutschen Bundestags. In der 19. Wahlperiode
+                        (2017–2021) war sie stellvertretende Vorsitzende der Fraktion Die Linke im Bundestag
+                        (2017–2020). Dagdelen ist Mitglied in der Parlamentarischen Versammlung der NATO (NATO PV) und
+                        stellvertretendes Mitglied in der Parlamentarischen Versammlung des Europarates. Sie ist zudem
+                        in diversen Verbänden Mitglied, u. a. im Bundesverband der Migrantinnen, den Naturfreunden und
+                        der Informationsstelle Militarisierung (IMI e. V.).
+                    </p>
+                    <h4>
+                        Melina Deymann
+                    </h4>
+                    <p>
+                        Melina Deymann studierte Theaterwissenschaft, Neuere Deutsche Literaturwissenschaft und
+                        Anglistik und machte im Anschluss eine Ausbildung als Buchhändlerin. Dem Traumberuf bereitete
+                        der Aufstieg eines Onlinemonopolisten ein jähes Ende. Der UZ kam es zugute: Seit 2017 ist sie
+                        bei der Wochenzeitung der DKP tätig, zuerst als Volontärin, heute als Redakteurin für
+                        internationale Politik und Kultur sowie als Chefin vom Dienst. Ihre Liebe zum Schreiben
+                        entdeckte sie bei der Arbeit für die Position, das Magazin der Sozialistischen Deutschen
+                        Arbeiterjugend.
+                    </p>
+                </div>
+            </div>
+
+            <h2>JUGENDPODIUM</h2>
+            <p class="important">
+                Reihenfolge vermutlich durchgemischt. Uhrzeiten unbekannt. Haltet die Augen offen, ob ihr ein
+                Programm findet, meistens an den Wänden klebend.
+            </p>
+            <div id="yp1">
+                <button type="button" class="collapsible-embedded">Die Frauenfriedensbewegung in der BRD
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Gegen den Abbau demokratischer Rechte, NATO-Aggression und Atomkriegsgefahr: Die
+                        Frauenfriedensbewegung in der BRD
+
+                        Die voranschreitende Aufrüstung der BRD umfasst nun Dimensionen, die seit 1945
+                        beispiellos sind. Die Gefahr eines neuen Weltkrieges wird täglich präsenter. Eine
+                        starke, geeinte Friedensbewegung ist in diesen Zeiten nötiger denn je. In diesem
+                        Workshop nehmen wir uns die Zeit für einen Blick in die Geschichte, speziell auf die
+                        Frauenfriedensbewegung in Westdeutschland zur Zeit des “Kalten Krieges”.
+                        Was war diese Bewegung? Welche Rolle spielten Kommunistinnen und Kommunisten in ihr und
+                        wie waren frauenspezifische Forderungen in den konkreten antimilitaristischen Kampf
+                        eingebettet? Diese und viele weitere Fragen, sowie was wir aus dieser Zeit für unseren
+                        antimilitaristischen Kampf heute lernen können, behandeln und diskutieren wir in diesem
+                        Workshop.
+                    </p>
+                </div>
+            </div>
+            <div id="yp2">
+                <button type="button" class="collapsible-embedded">Cuba – Eine Welt zu gewinnen</button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Anhand dem Beispiel Cubavermitteln wir Einblicke in das Leben im Sozialismus mit Fokus
+                        auf die Umweltpolitik und stellen es der Ausbeutung des Planeten und unserer natürlichen
+                        Lebensgrundlagen durch den Kapitalismus gegenüber. Trotz der Sanktionspolitik gegen Cuba
+                        hat das sozialistische Land nicht zuletzt aufgrund massiver
+
+                        Wiederaufforstung und des Ausbaus regenerativer Energieerzeugung Vorbildcharakter. Wir
+                        zeigen auf, wie wichtig praktische Cuba-Solidarität ist und skandalisieren den
+                        Wirtschaftskrieg des westlichen Imperialismus gegen Cuba. Wir machen die Möglichkeiten
+                        bekannt, die wir zum Kennenlernen des sozialistischen Inselstaats anbieten: Das Projecto
+                        Tamara Bunke und die Cuba-Brigaden im Sommer 2023.
+                    </p>
+                </div>
+            </div>
+            <div id="yp3">
+                <button type="button" class="collapsible-embedded">77 Tage Streik an den Kliniken in NRW – was
+                    können wir daraus lernen?
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Am Beispiel der elfeinhalb Wochen langen Streikerfahrung in der Auseinandersetzung um
+                        einen Tarifvertrag Entlastung an den Unikliniken in Nordrhein-Westfalen wollen wir uns
+                        anschauen, was unsere Aufgaben als kämpferische Gewerkschafter in Streik- und
+                        Tarifbewegungen sind, wonach wir diese beurteilen und wie es uns gelingen kann, die
+                        Propaganda der Arbeitgeber zu entlarven. Dabei soll die Bedeutung dieser Kämpfe
+                        vermittelt werden, nicht zuletzt für die Entwicklung von Klassenbewusstsein. Zudem soll
+                        beleuchtet werden, wie sich die Gewerkschaftsführung in solchen Auseinandersetzungen
+                        verhält und wie wir in den Gewerkschaften arbeiten müssen, um gemeinsam mit Kolleginnen
+                        und Kollegen Schlagkraft zu entwickeln. Mit Blick auf die aktuellen Tarifrunden im
+                        Öffentlichen Dienst und bei der Bahn wollen wir aus den Erfahrungen in NRW lernen, wie
+                        wir gegen die aktuellen Preissteigerungen und Angriffe von Oben aktiv werden können. Wir
+                        wollen dazu Aktive aus den genannten Auseinandersetzungen einbeziehen.
+                    </p>
+                </div>
+            </div>
+            <div id="yp4">
+                <button type="button" class="collapsible-embedded">Wie steht es um die Arbeiterjugend im
+                    Donbass?
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Diskussion mit Vertretern des Komsomols der Ukraine
+
+                        Neben den militärischen Eskalationen im Ukrainekonflikt sorgen auch der stetige Abbau
+                        demokratischer Grundrechte, wie das de facto Verbot gewerkschaftlicher Tätigkeit in
+                        ukrainischen Kleinbetrieben oder das Verbot mehrerer Parteien für eine zunehmend prekäre
+                        Situation der Arbeiterjugend in der Ukraine. Mit VertreterInnen des traditionsbeladenen
+                        ukrainischen kommunistischen Jugendverbandes Komsomol diskutieren wir über den
+                        reaktionären Staatsumbau in der Ukraine, die aktuelle Arbeit der GenossInnen vor Ort,
+                        sowie über die Einordnung der Verhaftung und Folter des Ersten Sekretärs des
+
+                        Jugendverbandes sowie seines Bruders (Kononovich-Brüder) vor dem Hintergrund des Kampfes
+                        der Arbeiterklasse in der Ukraine und der Repression durch den ukrainischen Staat.
+
+                        Zu Gast ist der Journalist Reinhard Lauterbach.
+                    </p>
+                </div>
+            </div>
+            <div id="yp5">
+                <button type="button" class="collapsible-embedded">Preissteigerungen an der Schule</button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Lernmittel, Mensaessen, Freizeitangebote – dass die Preise steigen, merken auch wir
+                        Schülerinnen und Schüler. Von unserem Taschengeld können wir uns immer weniger Snacks am
+                        Kiosk oder im Bäcker, Eintritte und anderes leisten. Als Dank dafür müssen wir bei 19°C
+                        im Klassenzimmer sitzen, während der Sanierungsbedarf an unserer Schule jeden Tag
+                        offensichtlicher wird. Gleichzeitig wird uns nicht zuletzt im Unterricht immer wieder
+                        erzählt, das alles sei notwendig, da wir jetzt in Krieg und Krise alle zusammenstehen
+                        und unseren Teil beitragen müssten. Aber wem nützen die Preissteigerungen? Wo ist das
+                        Geld, das uns und an unseren Schulen fehlt? Und wie können wir für bessere und
+                        kostenlose Lern- und Freizeitmöglichkeiten gemeinsam aktiv werden?
+                    </p>
+                </div>
+            </div>
+            <div id="yp6">
+                <button type="button" class="collapsible-embedded">Der Kampf um bezahlbaren Wohnraum in Berlin
+                </button>
+                <div class="content-embedded container-item">
+                    <p>
+                        Bezahlbares Wohnen sollte ein Grundrecht sein, im Kapitalismus ist Wohnraum vor allem
+                        Spekulationsobjekt und soll Profite bringen. Immobilienkonzerne wie Vonovia und die von
+                        ihm übernommene Deutsche Wohnen sind prominente Akteure, die mittels Aufkauf und
+                        Luxussanierung den Mietspiegel in die Höhe treiben – auf Kosten der Mieterinnen und
+                        Mieter. Dagegen macht das Bündnis „Deutsche Wohnen & Co enteignen“ mobil. Beim
+                        Volksentscheid, der den Berliner Senat dazu auffordert, die Immobilien in Gemeineigentum
+                        zu überführen, stimmten 59,1% mit „Ja“. Die Umsetzung wird vom Berliner Senat
+                        ausgesessen. Wir wollen uns anschauen, wie das Bündnis die Berliner Bevölkerung
+                        mobilisiert hat, mit welchen Problemen es zu kämpfen hat und welche Fallstricke es im
+                        Kapitalismus bei der Forderung nach Verstaatlichung bzw. Enteignung gibt.
+                    </p>
+                </div>
+            </div>
+
+            <h2>JUGENDPODIUM - PODIUMSDISKUSSION</h2>
+            <div id="youth-discussion">
+                <button type="button" class="collapsible">Jugendpodium-Diskussion: Inflation trifft Jugend – Widerstand
+                    als Antwort
+                </button>
+                <div class="content container-item">
+                    <p>
+                        Döner für 8 Euro, steigende Mensapreise in Schule und Uni, explodierende Kosten für Lebensmittel
+                        und Energie, Einsparungen bei Bildung, Sozialem und bei Freizeitangeboten – die Preise steigen,
+                        BaFöG, Ausbildungsgehalt und Löhne hinken hinterher.
+                    </p>
+                    <p>
+                        Wie bekommt die Jugend die Preissteigerungen und Einsparungen auf verschiedenen Ebenen zu
+                        spüren? Wer hat ein Interesse an den Preissteigerungen, wer sind die Krisengewinner? Welche
+                        Formen des Widerstandes gibt es bereits und was braucht es, um den Widerstand breiter und
+                        schlagkräftiger zu machen? Wie können wir breit für Frieden, Umweltschutz, gute Lern- und
+                        Arbeitsbedingungen in Bewegung kommen?
+                    </p>
+                    <p>
+                        Wir sprechen mit 5 Diskutanten verschiedener Jugendorganisationen, im Anschluss sind noch Zeit
+                        für Fragen aus dem Publikum.
+                    </p>
+                </div>
+            </div>
+
+            <h2>KULTURPROGRAMM</h2>
+            <div id="cultural-program">
+                <button type="button" class="collapsible">Kulturprogramm</button>
+                <div class="content container-item">
+                    <p>
+                        Pablo Miró, deutsch-argentinischer Musiker, Gitarrist und Liedermacher,
+                        und Nicolás Miquea, Liedermacher, Dichter und Gitarrist, Chile:
+                        Konzert für Víctor Jara
+                    </p>
+                    <p>
+                        Vorstellung des Films »Oh, Jeremy Corbyn: Die große Lüge«
+                        Gesprächsrunde mit Mitwirkenden
+                        (Weltpremiere: Sonntag, 15. Januar 2023, 14 Uhr, Kino Babylon)
+                    </p>
+                    <p>
+                        Kunstausstellung mit Arbeiten aus der jW-Kunstsammlung und Exponaten aus der jW-Grafikedition
+                    </p>
+                    <p>
+                        Konferenzsprachen sind Englisch, Spanisch, Deutsch (Simultanübersetzung).
+                        Das Programm wird laufend aktualisiert.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="/js/use_webworker.js"></script>
+<script src="/js/use_serviceworker.js"></script>
+<script src="/js/main.js"></script>
+
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+<!--Scripts for expandable buttons-->
+<script>
+    const coll = document.getElementsByClassName("collapsible-embedded");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            if (this.classList.contains("active")) {
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = null;
+            } else {
+                for (const e of document.getElementsByClassName('collapsible-embedded')) {
+                    if (e.classList.contains("active")) {
+                        e.classList.toggle("active");
+                        e.nextElementSibling.style.maxHeight = null;
+                    }
+                }
+                this.classList.toggle("active");
+                this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+<script>
+    let coll = document.getElementsByClassName("collapsible-embedded");
+    let i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            let content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>
